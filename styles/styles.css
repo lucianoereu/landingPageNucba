@@ -1,0 +1,71 @@
+/* importaciones */
+/* tipo de letra */
+/* Google Fonts open sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* Google Fonts Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Google Fonts cabin */
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Cabin:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Google Fonts Agu Display */
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Cabin:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* variables */
+:root {
+    --backgroundColor: #1a1a1a;
+    --textWhithe: #f2f2f2;
+    --colorTerciario: #4d4d4d;
+    --fontStyle: "Agu Display", serif;
+}
+
+/* estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background-color: var(--backgroundColor);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.navbar {
+    gap: 150px;
+    
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.nav-list a {
+    color: var(--textWhithe);
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    font-family: var(--fontStyle)
+}
+
+.nav-list a:hover {
+    color: var(--colorTerciario);
+}
+
+.nav-list li:first-child a {
+    color: var(--colorTerciario);
+    font-style: var(--fontStyle);
+}
