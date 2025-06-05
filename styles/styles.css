@@ -36,9 +36,8 @@ header {
     align-items: center;
     height: 65px;
     padding: 0px 30px;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: -1;
 }
 .logo{
     height: 50px;
@@ -86,11 +85,74 @@ header {
     display: none;
 }
 
+/* hero section */
 
-@media screen and (max-width: 768px) {
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--backgroundColor);
+    color: var(--textWhithe);
+    gap: 50px;
+    margin: 100px 100px 0 100px;
+    align-items: center;
+    padding: 50px 100px;
+    border-radius: 20px;
+}
+
+.hero-text {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: var(--fontStyle);
+}
+
+.hero-text p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.hero-image {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+/* about section */
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 150px;
+    padding: 50px 100px;
+}
+.about h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--fontStyle);
+    text-align: center;
+}
+.about p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+/* media queries */
+@media screen and (max-width: 968px) {
     body {
         background-color: var(--backgroundColor);
     }
+    /* menu toggle media queries */
     header {
         padding: 0px 20px;
         height: 60px;
@@ -122,5 +184,22 @@ header {
         transition: height 0.3s ease;   
         display: flex;
     }
-    
+
+    /* hero section media queries */
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .hero-text {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* about section media queries */
+    .about {
+        margin: 0px 100px;
+        padding: 20px;
+        color: var(--textWhithe);
+    }
 }
