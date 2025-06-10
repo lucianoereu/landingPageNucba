@@ -165,7 +165,7 @@ header {
         cursor: pointer; 
         color : var(--textWhithe);
         font-size: 30px;
-        font-weight: o00;
+        font-weight: 600;
         
     }
     .menu-toggle {
